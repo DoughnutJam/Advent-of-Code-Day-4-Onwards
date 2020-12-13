@@ -13,7 +13,7 @@ res = [lines[i: j] for i, j in
         zip([0] + idx_list, idx_list + 
         ([size] if idx_list[-1] != size else []))]
 
-print(res[0])
+print(res)
 
 
 for i in res:
