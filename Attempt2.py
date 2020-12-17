@@ -28,5 +28,9 @@ for firstl in ID:
             splitelem = elem.split(':',2)
 
 #split the keys & values into two list
-
+#write a function that takes a list of a passport and see if it's valid. better practice to write function outside for loop & call it inside
+#in the first for loop, call that function with that firstL
+#if func true +1 if not do not.
+#use split, 
+    
 print(splitelem[1])
