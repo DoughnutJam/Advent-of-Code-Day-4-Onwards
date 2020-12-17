@@ -15,17 +15,18 @@ lines = [items.replace('\n',' ') for items in lines]
 ID = [threecode.split(' ') for threecode in lines]
 
 key=ID[0][1].split(':',2)
-#splitting ID (eyrs:1233)
+#how to split ID (eyrs:1233) to 'EYRS' '123'
 
-print(ID[0][1])
-
+print(ID)
+print(ID[0])
+print(ID[0][0])
 #key[0] is first part key [1] is second part
 
-for i in ID:
-    for j in i:
-        for k in j:
-            splitelem = j.split(':',2)
+for firstl in ID:
+    for elem in firstl:
+        for k in elem:
+            splitelem = elem.split(':',2)
 
 #split the keys & values into two list
 
-print(splitelem)
+print(splitelem[1])
